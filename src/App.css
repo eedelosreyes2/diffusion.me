@@ -3,24 +3,29 @@
 }
 
 h1 {
-  font-size: 72px;
+  font-size: 70px;
 }
 
 h2 {
-  font-size: 60px;
+  font-size: 55px;
   line-height: 25px;
 }
 
 h3 {
   font-size: 25px;
+  line-height: 15px;
+}
+
+h4 {
+  line-height: 17px;
 }
 
 /* Header */
 .header {
-  align-items: baseline;
+  align-items: center;
   display: flex;
   justify-content: space-between;
-  padding: 0 72px;
+  padding: 0 25px;
 }
 
 .logo {
@@ -39,6 +44,44 @@ h3 {
 /* Hero */
 .hero-container {
   margin: auto;
-  margin-top: 100px;
+  margin-top: 90px;
   width: 72vw;
+}
+
+.join-container {
+  padding-top: 50px;
+}
+
+input {
+  background-color: rgb(240, 240, 240);
+  border: none;
+  border-radius: 5px;
+  color: black;
+  font-family: Aleo;
+  font-size: 17px;
+  font-weight: bold;
+  height: 40px;
+  padding: 0 15px;
+  outline: none;
+  text-align: center;
+}
+input:focus::placeholder {
+  color: transparent;
+}
+::placeholder {
+  color: black;
+  font-size: 17px;
+}
+
+button {
+  background-color: #00B1D2;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: Aleo;
+  font-size: 17px;
+  font-weight: bold;
+  height: 40px;
+  outline: none;
+  width: 60px;
 }
