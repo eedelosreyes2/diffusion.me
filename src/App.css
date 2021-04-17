@@ -107,20 +107,20 @@ button {
 
 /* Problem */
 .problem-container {
-  background-color: orchid;
+  /* background-color: orchid; */
   height: 100vh;
 }
 
 
 /* Solution */
 .solution-container {
-  background-color: salmon;
+  /* background-color: salmon; */
   height: 100vh;
 }
 
 /* How it Works */
 .how-it-works-container {
-  background-color: sienna;
+  /* background-color: sienna; */
   height: 100vh;
 }
 

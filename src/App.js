@@ -9,7 +9,6 @@ import Solution from './components/Solution';
 
 
 function App() {
-
   return (
     <div className="App">
       <Header/>
