@@ -6,9 +6,9 @@ export default class Header extends Component {
             <div className="header">
                 <h2 className="logo">diffusion</h2>
                 <div className="nav">
-                    <h3 className="nav-item" href="">Problem</h3>
-                    <h3 className="nav-item" href="">Solution</h3>
-                    <h3 className="nav-item" href="">How it Works</h3>
+                    <h4 className="nav-item" onClick={{}}>Problem</h4>
+                    <h4 className="nav-item" href="">Solution</h4>
+                    <h4 className="nav-item" href="">How it Works</h4>
                 </div>
             </div>
         )

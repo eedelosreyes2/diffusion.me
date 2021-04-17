@@ -1,9 +1,19 @@
+:root {
+  --blue: #00B1D2;
+}
+
 .App {
   text-align: center;
 }
 
 h1 {
   font-size: 70px;
+  display: block;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  margin-inline-start: 0;
+  margin-inline-end: 0;
+  font-weight: bold;
 }
 
 h2 {
@@ -23,13 +33,18 @@ h4 {
 /* Header */
 .header {
   align-items: center;
+  background-color: white;
   display: flex;
+  height: 90px;
   justify-content: space-between;
-  padding: 0 25px;
+  padding: 0 50px;
+  position: fixed;
+  width: 95vw;
+  z-index: 500;
 }
 
 .logo {
-  color: #00B1D2;
+  color: var(--blue);
 }
 
 .nav {
@@ -43,13 +58,15 @@ h4 {
 
 /* Hero */
 .hero-container {
+  /* background-color: rebeccapurple; */
+  height: calc(100vh - 175px);
+  padding-top: 175px;
   margin: auto;
-  margin-top: 90px;
   width: 72vw;
 }
 
 .join-container {
-  padding-top: 50px;
+  padding-top: 80px;
 }
 
 input {
@@ -58,10 +75,10 @@ input {
   border-radius: 5px;
   color: black;
   font-family: Aleo;
-  font-size: 17px;
+  font-size: 20px;
   font-weight: bold;
-  height: 40px;
-  padding: 0 15px;
+  height: 50px;
+  padding: 0 40px;
   outline: none;
   text-align: center;
 }
@@ -74,14 +91,39 @@ input:focus::placeholder {
 }
 
 button {
-  background-color: #00B1D2;
+  background-color: var(--blue);
   border: none;
   border-radius: 5px;
   cursor: pointer;
   font-family: Aleo;
-  font-size: 17px;
+  font-size: 20px;
   font-weight: bold;
-  height: 40px;
+  height: 50px;
   outline: none;
-  width: 60px;
+  width: 80px;
+}
+
+
+/* Problem */
+.problem-container {
+  background-color: orchid;
+  height: 100vh;
+}
+
+
+/* Solution */
+.solution-container {
+  background-color: salmon;
+  height: 100vh;
+}
+
+/* How it Works */
+.how-it-works-container {
+  background-color: sienna;
+  height: 100vh;
+}
+
+/* Footer */
+.footer {
+  background-color: var(--blue);
 }
