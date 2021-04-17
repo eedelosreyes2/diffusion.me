@@ -9,7 +9,7 @@ export default class Hero extends Component {
                     <h3>Cultural diffusion (n)</h3>
                     <h4>The spread of one culture's practices, beliefs, and/or items like food, music, or tools.</h4>
                     <div className="join-container">
-                        <input type="text" placeholder="you@email.com" onFocus="this.placeholder = ''"></input>
+                        <input type="text" placeholder="you@email.com" onFocus={() => {this.placeholder = ''}}></input>
                         <button>Join</button>
                     </div>
                 </div>

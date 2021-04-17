@@ -52,7 +52,8 @@ h4 {
 }
 
 .nav-item {
-  padding: 0 20px;
+  margin: 0 20px;
+  cursor: pointer;
 }
 
 
