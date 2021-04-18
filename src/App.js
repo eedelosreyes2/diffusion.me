@@ -1,11 +1,9 @@
 import './App.css';
+import Features from './components/Features';
 
 import Footer from './components/Footer';
 import Header from './components/Header'
 import Hero from './components/Hero';
-import HowItWorks from './components/HowItWorks';
-import Problem from './components/Problem';
-import Solution from './components/Solution';
 
 
 function App() {
@@ -13,9 +11,7 @@ function App() {
     <div className="App">
       <Header/>
       <Hero/>
-      <Problem/>
-      <Solution/>
-      <HowItWorks/>
+      <Features/>
       <Footer/>
     </div>
   );

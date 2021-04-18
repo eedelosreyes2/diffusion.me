@@ -9,11 +9,10 @@ export default class Header extends Component {
     render() {
         return (
             <div className="header">
-                <h2 className="logo">diffusion</h2>
+                <h3 className="logo">diffusion</h3>
                 <div className="nav">
-                    <h4 className="nav-item" onClick={this.focusProblem}>Problem</h4>
-                    <h4 className="nav-item" href="">Solution</h4>
-                    <h4 className="nav-item" href="">How it Works</h4>
+                    <h4 className="nav-item" onClick={this.focusProblem}>Features</h4>
+                    <button className="nav-item join-button">Join</button>
                 </div>
             </div>
         )
