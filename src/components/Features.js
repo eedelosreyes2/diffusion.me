@@ -3,7 +3,7 @@ import { Component } from 'react';
 export default class Features extends Component {
 	render() {
 		return (
-			<div className="features-container">
+			<div ref={this.props.setRef} className="features-container">
 				<div className="features-image-div">
 					<img className="features-image" alt=""></img>
 				</div>

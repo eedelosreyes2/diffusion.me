@@ -7,12 +7,19 @@ import Header from './components/Header';
 import Hero from './components/Hero';
 
 class App extends Component {
+	setRef = (ref) => {
+		this.featuresRef = ref;
+	};
+
+	focusFeatures = () => console.log(this.setRef);
+
 	render() {
 		return (
 			<div className="App">
+				<button onClick={this.focusFeatures}>features</button>
 				<Header />
 				<Hero />
-				<Features />
+				<Features setRef={this.setRef} />
 				<Footer />
 			</div>
 		);
