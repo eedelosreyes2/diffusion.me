@@ -7,9 +7,10 @@
   right: 0;
   margin: auto;
   text-align: center;
-  width: 85vw;
+  width: 80vw;
 }
 
+/* Globals */
 h1 {
   font-size: 50px;
   display: block;
@@ -40,6 +41,11 @@ button {
   font-size: 20px;
   font-weight: bold;
   outline: none;
+}
+.divider {
+  background-color: var(--blue);
+  height: 30px;
+  width: 25vw;
 }
 
 /* Header */
