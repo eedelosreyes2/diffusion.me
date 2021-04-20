@@ -16,7 +16,12 @@ export default class Hero extends Component {
 							organize it as pinboards that you can offer to your
 							community.
 						</h4>
-						<button className="diffuse-button">Diffuse</button>
+						<button
+							className="diffuse-button"
+							onClick={this.props.focusJoin}
+						>
+							Diffuse
+						</button>
 					</div>
 					<div className="hero-image-div">
 						<img className="hero-image" alt=""></img>

@@ -11,7 +11,12 @@ export default class Header extends Component {
 					<h4 className="nav-item" onClick={this.props.focusFeatures}>
 						Features
 					</h4>
-					<button className="nav-item join-button">Join</button>
+					<button
+						className="nav-item join-button"
+						onClick={this.props.focusJoin}
+					>
+						Join
+					</button>
 				</div>
 			</div>
 		);
