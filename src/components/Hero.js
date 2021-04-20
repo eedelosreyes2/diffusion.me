@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 export default class Hero extends Component {
 	render() {
 		return (
-			<div>
+			<div ref={this.props.setRef}>
 				<div className="hero-container">
 					<div className="hero-div">
 						<h1>

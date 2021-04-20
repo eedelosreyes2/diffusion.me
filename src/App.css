@@ -1,164 +1,169 @@
 :root {
-  --blue: #00B1D2;
+	--blue: #00b1d2;
 }
 
 .App {
-  left: 0;
-  right: 0;
-  margin: auto;
-  text-align: center;
-  width: 80vw;
+	left: 0;
+	right: 0;
+	margin: auto;
+	text-align: center;
+	width: 80vw;
 }
 
 /* Globals */
 h1 {
-  font-size: 50px;
-  display: block;
-  margin-block-start: 0;
-  margin-block-end: 0;
-  margin-inline-start: 0;
-  margin-inline-end: 0;
-  font-weight: bold;
+	font-size: 50px;
+	display: block;
+	margin-block-start: 0;
+	margin-block-end: 0;
+	margin-inline-start: 0;
+	margin-inline-end: 0;
+	font-weight: bold;
 }
 h2 {
-  font-size: 55px;
-  line-height: 25px;
+	font-size: 55px;
+	line-height: 25px;
 }
 h3 {
-  font-size: 25px;
-  line-height: 15px;
+	font-size: 25px;
+	line-height: 15px;
 }
 h4 {
-  line-height: 17px;
+	line-height: 17px;
 }
 button {
-  background-color: var(--blue);
-  border: none;
-  border-radius: 15px;
-  color: white;
-  cursor: pointer;
-  font-family: Aleo;
-  font-size: 20px;
-  font-weight: bold;
-  outline: none;
+	background-color: var(--blue);
+	border: none;
+	border-radius: 15px;
+	color: white;
+	cursor: pointer;
+	font-family: Aleo;
+	font-size: 20px;
+	font-weight: bold;
+	outline: none;
 }
 .divider {
-  background-color: var(--blue);
-  height: 30px;
-  width: 25vw;
+	background-color: var(--blue);
+	height: 5px;
+	width: 80px;
 }
 
 /* Header */
 .header {
-  align-items: center;
-  background-color: white;
-  display: flex;
-  height: 90px;
-  justify-content: space-between;
-  left: 0;
-  margin: auto;
-  position: fixed;
-  right: 0;
-  width: 85vw;
-  z-index: 500;
+	align-items: center;
+	background-color: white;
+	display: flex;
+	height: 90px;
+	justify-content: space-between;
+	left: 0;
+	margin: auto;
+	position: fixed;
+	right: 0;
+	width: 85vw;
+	z-index: 500;
 }
 .logo {
-  color: var(--blue);
-  cursor: pointer;
+	color: var(--blue);
+	cursor: pointer;
 }
 .nav {
-  display: flex;
-  align-items: baseline;
+	display: flex;
+	align-items: baseline;
 }
 .nav-item {
-  cursor: pointer;
-  margin-left: 30px;
+	cursor: pointer;
+	margin-left: 30px;
 }
 .join-button {
-  height: 40px;
-  width: 80px;
+	height: 40px;
+	width: 80px;
 }
 
 /* Hero */
 .hero-container {
-  /* background-color: rebeccapurple; */
-  display: flex;
-  height: calc(100vh - 150px);
-  justify-content: space-between;
-  left: 0;
-  margin: auto;
-  padding-top: 150px;
-  right: 0;
-  width: 100%;
+	/* background-color: rebeccapurple; */
+	display: flex;
+	height: calc(100vh - 150px);
+	justify-content: space-between;
+	left: 0;
+	margin: auto;
+	padding-top: 150px;
+	right: 0;
+	width: 100%;
 }
 .hero-div {
-  text-align: left;
-  width: 50%;
+	text-align: left;
+	width: 50%;
 }
 .diffuse-button {
-  background-color: var(--blue);
-  color: white;
-  height: 60px;
-  width: 200px;
+	background-color: var(--blue);
+	color: white;
+	height: 60px;
+	width: 200px;
 }
 .hero-image-div {
-  margin-top: -30px;
-  width: 50%;
+	margin-top: -30px;
+	width: 50%;
 }
 .hero-image {
-  background-color: lightgray;
-  border-radius: 25px;
-  height: 500px;
-  width: 230px;
+	background-color: lightgray;
+	border-radius: 25px;
+	height: 500px;
+	width: 230px;
 }
 .join-container {
-  padding-top: 50px;
+	padding-top: 50px;
 }
 input {
-  background-color: rgb(240, 240, 240);
-  border: none;
-  border-radius: 5px;
-  color: black;
-  font-family: Aleo;
-  font-size: 20px;
-  font-weight: bold;
-  height: 50px;
-  padding: 0 40px;
-  outline: none;
-  text-align: center;
+	background-color: rgb(240, 240, 240);
+	border: none;
+	border-radius: 5px;
+	color: black;
+	font-family: Aleo;
+	font-size: 20px;
+	font-weight: bold;
+	height: 50px;
+	padding: 0 40px;
+	outline: none;
+	text-align: center;
 }
 input:focus::placeholder {
-  color: transparent;
+	color: transparent;
 }
 ::placeholder {
-  color: black;
-  font-size: 17px;
+	color: black;
+	font-size: 17px;
 }
-
 
 /* Features */
 .features-container {
-  /* background-color: rebeccapurple; */
-  display: flex;
-  height: 1000px;
-  padding-top: 200px;
+	min-height: 1000px;
+	margin-top: 200px;
+	padding-top: 200px;
 }
-.features-image-div {
-  width: 50%;
-}
-.features-image {
-  background-color: lightgray;
-  height: 700px;
-  width: 500px;
+.feature {
+	align-items: center;
+	display: flex;
+	padding-bottom: 300px;
 }
 .features-div {
-  text-align: left;
-  width: 50%;
+	border-left: 5px solid var(--blue);
+	border-radius: 25px;
+	height: min-content;
+	padding: 50px;
+	text-align: left;
+	width: 50%;
 }
-
-
+.features-image-div {
+	width: 50%;
+}
+.features-image {
+	background-color: lightgray;
+	height: 500px;
+	width: 500px;
+}
 
 /* Footer */
 .footer {
-  background-color: var(--blue);
+	background-color: var(--blue);
 }

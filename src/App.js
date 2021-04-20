@@ -1,4 +1,4 @@
-import { Component } from 'react';
+import { Component, createRef } from 'react';
 import './App.css';
 import Features from './components/Features';
 
@@ -7,19 +7,26 @@ import Header from './components/Header';
 import Hero from './components/Hero';
 
 class App extends Component {
-	setRef = (ref) => {
-		this.featuresRef = ref;
-	};
+	constructor(props) {
+		super(props);
+		this.heroRef = createRef();
+		this.featuresRef = createRef();
+	}
 
-	focusFeatures = () => console.log(this.setRef);
+	focusHero = () =>
+		this.heroRef.current.scrollIntoView({ behavior: 'smooth' });
+	focusFeatures = () =>
+		this.featuresRef.current.scrollIntoView({ behavior: 'smooth' });
 
 	render() {
 		return (
 			<div className="App">
-				<button onClick={this.focusFeatures}>features</button>
-				<Header />
-				<Hero />
-				<Features setRef={this.setRef} />
+				<Header
+					focusHero={this.focusHero}
+					focusFeatures={this.focusFeatures}
+				/>
+				<Hero setRef={this.heroRef} />
+				<Features setRef={this.featuresRef} />
 				<Footer />
 			</div>
 		);
