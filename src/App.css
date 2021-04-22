@@ -81,7 +81,6 @@ button {
 
 /* Hero */
 .hero-container {
-	/* background-color: rebeccapurple; */
 	display: flex;
 	height: calc(100vh - 150px);
 	justify-content: space-between;
@@ -89,21 +88,14 @@ button {
 	margin: auto;
 	padding-top: 150px;
 	right: 0;
-	width: 100%;
-}
-.hero-div {
 	text-align: left;
-	width: 50%;
+	width: 100%;
 }
 .diffuse-button {
 	background-color: var(--blue);
 	color: white;
 	height: 60px;
 	width: 200px;
-}
-.hero-image-div {
-	margin-top: -30px;
-	width: 50%;
 }
 .hero-image {
 	background-color: lightgray;
@@ -114,18 +106,14 @@ button {
 
 /* Features */
 .features-container {
-	min-height: 1000px;
-	margin-top: 200px;
 	padding-top: 200px;
 }
 .feature {
 	align-items: center;
 	display: flex;
-	padding-bottom: 300px;
+	padding-bottom: 200px;
 }
 .features-div {
-	/* border-left: 3px solid var(--blue);
-	border-right: 3px solid var(--blue); */
 	border-radius: 15px;
 	height: min-content;
 	padding: 50px;
@@ -133,6 +121,7 @@ button {
 	width: 50%;
 }
 .features-image-div {
+	display: none;
 	width: 50%;
 }
 .features-image {
@@ -148,11 +137,11 @@ button {
 	color: white;
 	display: flex;
 	flex-direction: column;
-	height: max-content;
-	padding: 80px;
+	height: 300px;
+	justify-content: center;
 	margin: auto;
 	margin-bottom: 100px;
-	width: 75vw;
+	width: 45vw;
 }
 input {
 	background-color: white;
@@ -162,7 +151,7 @@ input {
 	font-family: Aleo;
 	font-size: 20px;
 	font-weight: bold;
-	height: 50px;
+	height: 40px;
 	padding: 0 40px;
 	outline: none;
 	text-align: center;
@@ -177,7 +166,52 @@ input:focus::placeholder {
 .join-button-white {
 	background-color: white;
 	color: black;
-	height: 50px;
+	height: 40px;
 	margin-left: 10px;
 	width: 80px;
+}
+
+/* Tablet/Mobile */
+@media only screen and (max-width: 768px) {
+	h1 {
+		font-size: 35px;
+	}
+	h2 {
+		font-size: 28px;
+	}
+	.App {
+		width: 85vw;
+	}
+	.header {
+		height: 70px;
+		width: 85vw;
+	}
+	.hero-container {
+		flex-direction: column;
+		height: auto;
+		padding-top: 125px;
+		text-align: center;
+	}
+	.hero-text {
+		text-align: left;
+	}
+	.diffuse-button {
+		margin-bottom: 125px;
+	}
+	.features-container {
+		padding-top: 125px;
+	}
+	.features-div {
+		padding: 0;
+		width: 100%;
+	}
+
+	.join-container {
+		padding: 15px;
+		width: 75vw;
+	}
+	input {
+		padding: 0 10px;
+		margin-bottom: 10px;
+	}
 }
