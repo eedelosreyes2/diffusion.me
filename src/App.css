@@ -186,6 +186,9 @@ input:focus::placeholder {
 		height: 70px;
 		width: 85vw;
 	}
+	.nav-item {
+		margin-left: 10px;
+	}
 	.hero-container {
 		flex-direction: column;
 		height: auto;
@@ -204,6 +207,9 @@ input:focus::placeholder {
 	.features-div {
 		padding: 0;
 		width: 100%;
+	}
+	.feature {
+		padding-bottom: 125px;
 	}
 
 	.join-container {
