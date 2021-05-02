@@ -1,6 +1,6 @@
 {
 	"name": "diffusion.me",
-	"homepage": "diffusion.me",
+	"homepage": "https://diffusion.me",
 	"version": "0.1.0",
 	"private": true,
 	"dependencies": {
