@@ -14,20 +14,19 @@ export default class Hero extends Component {
 							className="hero-text"
 							style={{ paddingBottom: '50px' }}
 						>
-							Curate your favorite content from the web and
-							organize it as pinboards that you can offer to your
-							community.
+							Curate both your favorite web content and personal
+							creations as pinboards to share.
 						</h4>
 						<button
 							className="diffuse-button"
 							onClick={this.props.focusJoin}
 						>
-							Diffuse
+							Join the waitlist
 						</button>
 					</div>
-					<div>
+					{/* <div>
 						<img className="hero-image" alt=""></img>
-					</div>
+					</div> */}
 				</div>
 			</div>
 		);

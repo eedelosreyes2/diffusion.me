@@ -140,7 +140,7 @@ button {
 	height: 300px;
 	justify-content: center;
 	margin: auto;
-	margin-bottom: 100px;
+	margin-bottom: 150px;
 	width: 45vw;
 }
 input {
@@ -169,6 +169,11 @@ input:focus::placeholder {
 	height: 40px;
 	margin-left: 10px;
 	width: 80px;
+}
+
+/* Footer */
+.footer {
+	padding-bottom: 100px;
 }
 
 /* Tablet/Mobile */
