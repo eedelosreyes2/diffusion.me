@@ -197,27 +197,20 @@ input:focus::placeholder {
 	h2 {
 		font-size: 28px;
 	}
-	.App {
-		/* width: 85vw; */
-	}
 	.header {
 		height: 70px;
-		/* width: 90vw; */
 	}
 	.nav-item {
 		margin-left: 10px;
 	}
 	.hero-container {
 		flex-direction: column;
-		height: auto;
+		height: calc(100vh - 125px);
 		padding-top: 125px;
 		text-align: center;
 	}
 	.hero-text {
 		text-align: left;
-	}
-	.diffuse-button {
-		margin-bottom: 125px;
 	}
 	.features-container {
 		background-color: var(--blue);
