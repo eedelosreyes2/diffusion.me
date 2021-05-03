@@ -1,6 +1,5 @@
 import { Component, createRef } from 'react';
 import './App.css';
-import Construction from './components/Construction';
 import Features from './components/Features';
 
 import Footer from './components/Footer';
@@ -22,22 +21,22 @@ class App extends Component {
 		this.featuresRef.current.scrollIntoView({ behavior: 'smooth' });
 	focusJoin = () => {
 		this.joinRef.current.scrollIntoView({ behavior: 'smooth' });
-		console.log('hi');
 	};
 
 	render() {
 		return (
-			<div className="App">
-				<Header
-					focusHero={this.focusHero}
-					focusFeatures={this.focusFeatures}
-					focusJoin={this.focusJoin}
-				/>
-				<Construction />
-				<Hero setRef={this.heroRef} focusJoin={this.focusJoin} />
-				<Features setRef={this.featuresRef} />
-				<Join setRef={this.joinRef} />
-				<Footer />
+			<div style={{ borderBottom: '10px solid #00b1d2' }}>
+				<div className="App">
+					<Header
+						focusHero={this.focusHero}
+						focusFeatures={this.focusFeatures}
+						focusJoin={this.focusJoin}
+					/>
+					<Hero setRef={this.heroRef} focusJoin={this.focusJoin} />
+					<Features setRef={this.featuresRef} />
+					<Join setRef={this.joinRef} />
+					<Footer />
+				</div>
 			</div>
 		);
 	}

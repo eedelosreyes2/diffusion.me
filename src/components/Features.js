@@ -64,6 +64,7 @@ export default class Features extends Component {
 				{this.state.features.map((feature) => {
 					return (
 						<Feature
+							key={feature.id}
 							header={feature.header}
 							content={feature.content}
 						/>
