@@ -7,11 +7,11 @@ class Feature extends Component {
 				<div className="features-image-div">
 					<img className="features-image" alt=""></img>
 				</div>
-				<div className="features-div">
+				<div className="features-div" style={this.props.featureStyle}>
 					{/* <div className="divider" /> */}
 					<h3>{this.props.header}</h3>
-					{this.props.content.map((content) => {
-						return <h4>{content}</h4>;
+					{this.props.content.map((content, index) => {
+						return <h4 key={index}>{content}</h4>;
 					})}
 				</div>
 			</div>
@@ -59,17 +59,34 @@ export default class Features extends Component {
 	};
 
 	render() {
+		let i = 0;
+		let featureStyle = null;
+
 		return (
 			<div ref={this.props.setRef} className="features-container">
-				{this.state.features.map((feature) => {
-					return (
-						<Feature
-							key={feature.id}
-							header={feature.header}
-							content={feature.content}
-						/>
-					);
-				})}
+				<div className="features-inner">
+					{this.state.features.map((feature, index) => {
+						i++;
+
+						if (i % 2 === 1) {
+							featureStyle = {
+								// border: '2px solid var(--blue)',
+								// color: 'white',
+							};
+						} else {
+							featureStyle = null;
+						}
+
+						return (
+							<Feature
+								key={index}
+								featureStyle={featureStyle}
+								header={feature.header}
+								content={feature.content}
+							/>
+						);
+					})}
+				</div>
 			</div>
 		);
 	}
